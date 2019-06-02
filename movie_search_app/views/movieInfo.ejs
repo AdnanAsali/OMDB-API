@@ -1,0 +1,7 @@
+<h1>This is the movieInfo page from GO!</h1>
+
+<% movieData["Search"].forEach(function(movie) { %>
+
+    <img src="<%= movie["Poster"] %>">
+    <strong><li>Name: <%= movie["Title"] %> - Year: <%= movie["Year"]%> - Rating <%= movie["imdbID"] %> </li></strong>
+<% }) %>
